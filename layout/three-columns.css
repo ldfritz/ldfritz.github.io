@@ -1,0 +1,45 @@
+.box-1 {
+  background-color: #eae; }
+.box-2 {
+  background-color: #aee; }
+.box-3 {
+  background-color: #eea; }
+
+body {
+  position: relative;
+}
+@media screen and (min-width: 480px) {
+  .box-1,
+  .box-2,
+  .box-3 {
+    width: 50%;
+  }
+  .box-1 {
+    position: absolute;
+    left:0
+  }
+  .box-2 {
+    float: right;
+  }
+  .box-3 {
+    clear: right;
+    float: right;
+  }
+}
+@media screen and (min-width: 720px) {
+  .box-1,
+  .box-2,
+  .box-3 {
+    width: 33.333%;
+  }
+  .box-2 {
+    position: absolute;
+    top: 0;
+    left: 33.333%;
+  }
+  .box-3 {
+    position: absolute;
+    top: 0;
+    left: 66.666%;
+  }
+}
