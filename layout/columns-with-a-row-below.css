@@ -1,0 +1,53 @@
+.box-1 {
+  background-color: #eae; }
+.box-2 {
+  background-color: #aee; }
+.box-3 {
+  background-color: #eea; }
+.box-4 {
+  background-color: #aae; }
+
+/* I remove the padding and margins to make sure the boxes don't overlap when I resize them using percentages. */
+* {
+  margin: 0;
+  padding: 0; }
+
+/***** MEDIUM: 2 COLUMNS *****/
+/* I want the second and third box to create a second column.  And I want the fourth box to stay below everything else. */
+@media screen and (min-width: 480px) {
+  .box-1,
+  .box-2,
+  .box-3 {
+    width: 50%;
+  }
+  .box-1 {
+    position: absolute; /* I pull the first box out of the flow so that the second box rises to the top. */
+  }
+  .box-2,
+  .box-3 {
+    float: right;
+  }
+  .box-3,
+  .box-4 {
+    clear: right; /* I clear the third box so that it will drop below the second box.  I clear the fourth box so that it drops below the third box. */
+  }
+}
+/***** MEDIUM: 2 COLUMNS *****/
+
+/***** LARGE: 3 COLUMNS *****/
+/* I want the third box to be in a third column. I still want the fourth box to stay at the bottom. */
+@media screen and (min-width: 720px) {
+  .box-1,
+  .box-2,
+  .box-3 {
+    width: 33.333%;
+    float: left;
+  }
+  .box-1 {
+    position: initial; /* Since I had used `position: absolute` earlier to remove it from the flow of the documenth, I now need to put it back into the flow. */
+  }
+  .box-4 {
+    clear: left; /* I use `clear: right` instead of `clear: both` in the medium view.  However, now that the boxes are floated left, it does not sit belowe them. */
+  }
+}
+/***** LARGE: 3 COLUMNS *****/

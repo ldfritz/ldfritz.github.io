@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+/*  box-sizing: border-box;*/ /* I needed this when I used a border */
+}
+
+.box-1 {
+  background: linear-gradient(blue, white);
+}
+
+.box-2 {
+  background: linear-gradient(white, red)
+}
+
+@media screen and (min-width: 480px) {
+  .box-1 {
+    background: linear-gradient(90deg, blue, white);
+    width: 50%;
+    float: left;
+  }
+  .box-2 {
+    background: linear-gradient(-90deg, red, white);
+    width: 50%;
+    float: left;
+  }
+}
