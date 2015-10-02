@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Hind:300);
+
+$dark-color: #555;
+
+.banner__img {
+  width: 100%; }
+
+.simple-nav {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "Hind", sans-serif;
+  color: $dark-color;
+  &__title {
+    font-size: 3em;
+    font-weight: 300;
+    @media (min-width: 30em) {
+      display: inline-block;
+      margin-right: 1em; } }
+  &__link {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-decoration: none;
+    &:visited {
+      color: $dark-color; }
+    &:hover {
+      color: darken($dark-color, 20%); }
+    @media (min-width: 30em) {
+      display: inline-block;
+      padding-right: 0.5em;
+    }
+  }
+}
