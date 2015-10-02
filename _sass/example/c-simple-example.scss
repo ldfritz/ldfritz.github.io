@@ -1,0 +1,8 @@
+.simple-example {
+  margin: 2em;
+  padding: 1em;
+  background-color: white;
+  &:after {
+    content: "";
+    display: table;
+    clear: both; } }
