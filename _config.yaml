@@ -1,0 +1,6 @@
+title: Luke's Scratch Pad
+description: A space for me to practice my HTML.
+url: "http://ldfritz.github.io"
+baseurl: ""
+markdown: kramdown
+exclude: ["README.markdown", "LICENSE"]

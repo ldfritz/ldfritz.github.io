@@ -1,20 +1,20 @@
 /*
-.column-1 {
+.col2withnestedrow__column-1 {
   background-color: #eee; }
-.column-2 {
+.col2withnestedrow__column-2 {
   background-color: #eee; }
-.row-1 {
+.col2withnestedrow__row-1 {
   background-color: #ddd; }
-.row-2 {
+.col2withnestedrow__row-2 {
   background-color: #ddd; }
 */
 
 @media screen and (min-width: 480px) {
-  .column-1 {
+  .col2withnestedrow__column-1 {
     width: 50%;
     float: left;
   }
-  .column-2 {
+  .col2withnestedrow__column-2 {
     width: 50%;
     float: left;
   }

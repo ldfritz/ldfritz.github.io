@@ -1,17 +1,112 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Layout</title>
-  </head>
-  <body>
-    <h1>Layout</h1>
+---
+layout: default
+title: Layouts
+styles: [main.css, layouts.css]
+---
+<h1>Layout</h1>
+
+<h2>Three columns with a footer</h2>
+<section class="example">
+  <div class="col3withfoot__box-1">
+    <h1>Box One</h1>
+    <p>This will always be in the first column.</p>
+  </div>
+  <div class="col3withfoot__box-2">
+    <h1>Box Two</h1>
+    <p>This will move to the second column along with the third box.</p>
+  </div>
+  <div class="col3withfoot__box-3">
+    <h1>Box Three</h1>
+    <p>This will continue on to be a third column.</p>
+  </div>
+  <div class="col3withfoot__footer">
+    <h1>Box four</h1>
+    <p>This will always be below.</p>
+  </div>
+</section>
+
+<h2>Two columns with a sidebar</h2>
+<section class="example">
+  <div class="col2withside__sidebar">
+    <h1>Sidebar</h1>
     <ul>
-      <li><a href="sidebar-with-two-columns.html">Sidebar with two columns</a></li>
-      <li><a href="columns-with-a-row-below.html">Columns with a row below</a></li>
-      <li><a href="two-columns.html">Two columns</a></li>
-      <li><a href="two-columns-and-one-has-two-rows.html">Two columns and one has two rows</a></li>
-      <li><a href="three-columns.html">Three columns</a></li>
-      <li><a href="three-columns-with-nesting-divs.html">Three columns with nesting divs</a></li>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
     </ul>
-  </body>
-</html>
+  </div>
+  <div class="col2withside__main">
+    <div class="col2withside__box-1">
+      <h1>Box One</h1>
+      <p>This is the first box.</p>
+    </div>
+    <div class="col2withside__box-2">
+      <h1>Box Two</h1>
+      <p>This is the second, and even greater, box.</p>
+    </div>
+  </div>
+</section>
+
+<h2>Three columns</h2>
+<section class="example">
+  <div class="col3__box-1">
+    <h1>Box One</h1>
+    <p>This will always be in the first column.</p>
+  </div>
+  <div class="col3__box-2">
+    <h1>Box Two</h1>
+    <p>This will move to the second column along with the third box.</p>
+  </div>
+  <div class="col3__box-3">
+    <h1>Box Three</h1>
+    <p>This will continue on to be a third column.</p>
+  </div>
+</section>
+
+<h2>Three columns with nesting divs</h2>
+<section class="example">
+  <div class="col3nested__col-1">
+    <h1>Box One</h1>
+    <p>This will always be in the first column.</p>
+  </div>
+  <div class="col3nested__col-2">
+    <div class="col3nested__col-2__box-1">
+      <h1>Box Two</h1>
+      <p>This will move to the second column along with the third box.</p>
+    </div>
+    <div class="col3nested__col-2__box-2">
+      <h1>Box Three</h1>
+      <p>This will continue on to be a third column.</p>
+    </div>
+  </div>
+</section>
+
+<h2>Two columns and one has two rows</h2>
+<section class="example">
+  <div class="col2withnestedrow__column-1">
+    <h1>Box One</h1>
+    <p>This is the first column.</p>
+  </div>
+  <div class="col2withnestedrow__column-2">
+    <div class="col2withnestedrow__row-1">
+      <h1>Box Two</h1>
+      <p>This is the first row in the second column.</p>
+    </div>
+    <div class="col2withnestedrow__row-2">
+      <h1>Box Three</h1>
+      <p>This is the second row in the second column.</p>
+    </div>
+  </div>
+</section>
+
+<h2>Two columns</h2>
+<section class="example">
+  <div class="col2__box-1">
+    <h1>Box 1</h1>
+    <p>This is the first box.</p>
+  </div>
+  <div class="col2__box-2">
+    <h1>Box 2</h1>
+    <p>This is the second box.</p>
+  </div>
+</section>

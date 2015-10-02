@@ -1,0 +1,17 @@
+.col2__box-1 {
+  background: linear-gradient(blue, white);
+  @media screen and (min-width: 480px) {
+    background: linear-gradient(90deg, blue, white);
+    width: 50%;
+    float: left;
+  }
+}
+
+.col2__box-2 {
+  background: linear-gradient(white, red);
+  @media screen and (min-width: 480px) {
+    background: linear-gradient(-90deg, red, white);
+    width: 50%;
+    float: left;
+  }
+}

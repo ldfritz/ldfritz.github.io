@@ -1,27 +1,27 @@
-.col-1 {
+.col3nested__col-1 {
   background-color: #eee; }
-.col-2 {
+.col3nested__col-2 {
   background-color: #eae; }
-.col-2__box-1 {
+.col3nested__col-2__box-1 {
   background-color: #ddd; }
-.col-2__box-2 {
+.col3nested__col-2__box-2 {
   background-color: #ddd; }
 
 @media screen and (min-width: 480px) {
-  .col-1 {
+  .col3nested__col-1 {
     width: 50%;
     float: left; }
-  .col-2 {
+  .col3nested__col-2 {
     width: 50%;
     float: left; }
 }
 
 @media screen and (min-width: 720px) {
-  .col-1 {
+  .col3nested__col-1 {
     width: 33.333%; }
-  .col-2 {
+  .col3nested__col-2 {
     width: 66.666%; }
-  .col-2__box-1 {
+  .col3nested__col-2__box-1 {
     width: 50%;
     float: left; }
 }
