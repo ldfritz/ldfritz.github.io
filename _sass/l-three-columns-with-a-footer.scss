@@ -1,44 +1,32 @@
-.col3withfoot__box-1 {
-  background-color: #eae; }
-.col3withfoot__box-2 {
-  background-color: #aee; }
-.col3withfoot__box-3 {
-  background-color: #eea; }
-.col3withfoot__footer {
-  background-color: #aae; }
-
-/* I want the second and third box to create a second column.  And I want the fourth box to stay below everything else. */
-@media screen and (min-width: 480px) {
-  .col3withfoot__box-1,
-  .col3withfoot__box-2,
-  .col3withfoot__box-3 {
-    width: 50%;
-  }
-  .col3withfoot__box-1 {
-    position: absolute; /* I pull the first box out of the flow so that the second box rises to the top. */
-  }
-  .col3withfoot__box-2,
-  .col3withfoot__box-3 {
-    float: right;
-  }
-  .col3withfoot__box-3,
-  .col3withfoot__footer {
-    clear: right; /* I clear the third box so that it will drop below the second box.  I clear the fourth box so that it drops below the third box. */
-  }
-}
-
-/* I want the third box to be in a third column. I still want the fourth box to stay at the bottom. */
-@media screen and (min-width: 720px) {
-  .col3withfoot__box-1,
-  .col3withfoot__box-2,
-  .col3withfoot__box-3 {
-    width: 33.333%;
-    float: left;
-  }
-  .col3withfoot__box-1 {
-    position: initial; /* Since I had used `position: absolute` earlier to remove it from the flow of the documenth, I now need to put it back into the flow. */
-  }
-  .col3withfoot__footer {
-    clear: left; /* I use `clear: right` instead of `clear: both` in the medium view.  However, now that the boxes are floated left, it does not sit belowe them. */
-  }
-}
+.col3withfoot {
+  &__box-1 {
+    background-color: #eae;
+    @media screen and (min-width: 480px) {
+      width: 50%;
+      float: left; }
+    @media screen and (min-width: 720px) {
+      width: 33.333%;
+      float: left;
+      position: initial; } }
+  &__box-2 {
+    background-color: #aee;
+    @media screen and (min-width: 480px) {
+      width: 50%;
+      float: left; }
+    @media screen and (min-width: 720px) {
+      width: 33.333%;
+      float: left; } }
+  &__box-3 {
+    background-color: #eea;
+    @media screen and (min-width: 480px) {
+      width: 50%;
+      float: right; }
+    @media screen and (min-width: 720px) {
+      width: 33.333%;
+      float: left; } }
+  &__footer {
+    background-color: #aae;
+    @media screen and (min-width: 480px) {
+      clear: right; }
+    @media screen and (min-width: 720px) {
+      clear: left; } } }

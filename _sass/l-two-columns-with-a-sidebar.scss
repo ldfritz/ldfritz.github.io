@@ -1,28 +1,18 @@
-.col2withside__sidebar {
-  background-color: #fd8;
-  @media screen and (min-width: 480px) {
-    float: left;
-  }
-}
-
-.col2withside__main {
-  @media screen and (min-width: 480px) {
-    overflow: hidden; /* Make sure nothing wraps under the sidebar. */
-  }
-}
-
-.col2withside__box-1 {
-  background-color: #8df;
-  @media screen and (min-width: 720px) {
-    float: left;
-    width: 50%;
-  }
-}
-
-.col2withside__box-2 {
-  background-color: #d8f;
-  @media screen and (min-width: 720px) {
-    float: left;
-    width: 50%;
-  }
-}
+.col2withside {
+  &__sidebar {
+    background-color: #fd8;
+    @media screen and (min-width: 480px) {
+      float: left; } }
+  &__main {
+    @media screen and (min-width: 480px) {
+      overflow: hidden; } }
+  &__box-1 {
+    background-color: #8df;
+    @media screen and (min-width: 720px) {
+      float: left;
+      width: 50%; } }
+  &__box-2 {
+    background-color: #d8f;
+    @media screen and (min-width: 720px) {
+      float: left;
+      width: 50%; } } }
